@@ -3,4 +3,8 @@ function Cat(name){
 	this.stomach = [];
 }
 
-module.exports = Cat;
+Cat.prototype.eat = function(mouse){
+	this.stomach.push(mouse);
+}
+
+module.exports = Cat;	
